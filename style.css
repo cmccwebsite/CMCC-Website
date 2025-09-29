@@ -1054,6 +1054,7 @@ table td {
     padding: 10px 10px !important;
     border-radius: 540px !important;
     font-family: Arvo;
+    display: none; /*REMOVE THIS TO RE-ENABLE TRANSLATION FEATURE*/
 }
 
 .goog-te-gadget-icon {
