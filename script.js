@@ -58,23 +58,23 @@ function toggleInfo(element) {
 
 // LANGUAGE
 
-//     function googleTranslateElementInit() {
-//       new google.translate.TranslateElement({
-//         pageLanguage: 'en',
-//         includedLanguages: 'en,zh-CN,zh-TW', // optional: restrict list
-//         layout: google.translate.TranslateElement.InlineLayout.SIMPLE
-//       }, 'google_translate_element');
-//     }
+     function googleTranslateElementInit() {
+       new google.translate.TranslateElement({
+         pageLanguage: 'en',
+         includedLanguages: 'en,zh-CN,zh-TW', // optional: restrict list
+         layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+       }, 'google_translate_element');
+     }
     
     // After widget loads, replace the text
-//     function changeTranslatePrompt() {
-//       const interval = setInterval(() => {
-//         const select = document.querySelector('.goog-te-combo');
-//         if (select && select.options.length > 0) {
-//           select.options[0].text = 'Translate'; // change "Select Language" → "Translate"
-//           clearInterval(interval);
-//         }
-//       }, 100); // check every 100ms until ready
-//     }
+     function changeTranslatePrompt() {
+       const interval = setInterval(() => {
+         const select = document.querySelector('.goog-te-combo');
+         if (select && select.options.length > 0) {
+           select.options[0].text = 'Translate'; // change "Select Language" → "Translate"
+           clearInterval(interval);
+         }
+       }, 100); // check every 100ms until ready
+     }
     
-//     window.addEventListener('load', changeTranslatePrompt);
+     window.addEventListener('load', changeTranslatePrompt);
